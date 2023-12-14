@@ -129,7 +129,7 @@ if (typeof Storage !== 'undefined') {
                 // Display alert for successful signup
                 alert('Signup successful!');
                 addOrUpdateUser(email, password);
-                window.location.href = 'home.html'; // Change '/home' to your actual home page URL
+                window.location.href = 'login.html'; // Change '/home' to your actual home page URL
             });
         });
     }

@@ -86,7 +86,9 @@ main {
     border: 1px solid #000000;
     border-radius: 10px;
     justify-content: center;
-
+    height: 60%;
+    background-color: #ffffff;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6);
 }
 
 input[type=submit] {
@@ -131,15 +133,15 @@ body {
 }
 
 
-nav a{
+nav a {
     padding: 2%;
     font-family: 'Cormorant Garamond', serif;
     font-size: larger;
     text-decoration: none;
     font-weight: bold;
     color: #234E70;
-  }
+}
 
-#nav_title{
+#nav_title {
     color: #234E70;
 }
