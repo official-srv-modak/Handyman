@@ -1,0 +1,530 @@
+body{
+    padding: 0;
+    margin: 0;
+}
+.dflex{
+    display: flex;
+}
+.container{
+    margin: 20px;
+    display: block;
+}
+.container h1{
+    text-align: center;
+    font-family: 'Cormorant Garamond', serif;
+}
+header{
+    width: 100%;
+}
+main{
+    width: 100%;
+    background-color: white;
+    flex-direction: column;
+}
+.bghead{
+  background-image:linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.8)) ,url("../images/luxa.org-opacity-changed-elevated-view-electric-drill-plastic-case-with-hardware-items.jpg"); 
+    background-size: contain;
+    height: 700px;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-position: 15%;
+}
+.darken-bg::before {
+  content: '';
+  position: absolute;
+  background: rgba(0, 0, 0, 0.1);
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 80%;
+}
+.bghead h1{
+    color: white;
+    font-size:60px; 
+    font-family: 'Cormorant Garamond', serif;
+    /* font-family: 'Exo 2', sans-serif; */
+    
+}
+.bghead p{
+    color: white;
+    font-size:25px;
+    font-weight: lighter;
+    padding: 0;
+    margin: 0;
+    font-family: 'Cormorant Garamond', serif;
+} 
+
+.content-section {
+  display: flex;
+  align-items: center;
+  margin: 5%;
+  background-color: #ffffff; /* Background color for the content section */
+}
+
+.why-choose-list{
+  list-style: none;
+  line-height: 25px;
+  padding-inline-start: 0px;
+}
+/* Add a class to the "How It Works" section for styling */
+.how-it-works {
+  background-color: #234E70; /* Change background color as needed */
+  padding: 20px;
+  text-align: center;
+}
+
+/* Style the "How It Works" section headings and list */
+.how-it-works h3 {
+  font-size: 34px;
+  color: white; /* Text color */
+}
+.points {
+  display: flex;
+  justify-content: space-around;
+}
+
+.point {
+  text-align: center;
+  margin: 10px;
+}
+
+.point span {
+  display: block;
+  font-size: 36px;
+  background-color: #E8BA40; /* Circle background color */
+  color: #234E70; /* Text color */
+  width: 60px;
+  height: 60px;
+  line-height: 48px;
+  border-radius: 50%;
+  margin: 0 auto 10px;
+}
+
+.point p {
+  font-size: 18px;
+  color: white; /* Text color */
+}
+.point h5{
+  font-size: 16px;
+  margin: 0;
+  padding: 10px;
+  color: wheat; /* Text color */
+}
+/* Style the arrow icons */
+.point h5 i {
+  margin-left: 10px;
+  font-size: 16px;
+  color: #007bff; /* Arrow color */
+}
+.smiley {
+  font-size: 1.5em;
+  color: #3498db;
+  margin:0;
+}
+/* Media query for responsiveness (adjust as needed) */
+@media (max-width: 768px) {
+  .how-it-works h3 {
+    font-size: 20px;
+  }
+}
+.yellow-blob {
+  width: 80%;
+  height: 470px;
+  background-color: #E8BA40; /* Yellow color for the circle */
+  border-radius: 50%; /* Makes it a circle */
+  margin-right: 50px; /* Spacing between the circle and content */
+  position: relative; /* Allows absolute positioning within the blob */
+}
+
+/* Style for the content on the right side */
+.content-text {
+  font-family: 'Cormorant Garamond', serif;
+  color: #234E70; 
+}
+.content-text h2{
+  color:#E8BA40 ;
+  font-weight: bold
+}
+.content-text h3{
+  color:#E8BA40 ; 
+  font-weight: bold;
+}
+.image-overlay {
+  position: absolute;
+  top: 65px;
+  transform: scaleX(-1);
+  left: 80px;
+  width: inherit;
+  border-radius: 5px;
+  height: 70%;}
+
+/* Additional CSS for the second image */
+.top-image {
+  position: absolute; /* Position the image absolutely */
+  top: 20px; /* Adjust the top position as needed */
+  left: 20px; /* Adjust the left position as needed */
+  width: 40%; /* Set the width of the second image */
+  height: auto; /* Automatically calculate height based on the width */
+  z-index: 1; /* Ensure it's on top of the first image (z-index) */
+  border: 2px solid #234E70; /* Add a border around the second image */
+  border-radius: 50%; /* Make it circular with a border-radius */
+}
+
+
+
+/* Style the background container */
+.background-container {
+  background-image: url(../images/telephone-laptop-flat-lay-with-workspace-yellow-background.jpg);
+  position: relative;
+  width: 100%;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+/* Style the background image */
+.background-container img {
+  width: 100%;
+  height: 560px;
+  object-fit: cover;
+}
+
+/* Style the form container */
+.form-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Style the form content container */
+.form-content {
+  background-color: rgba(255, 255, 255, 0.9);
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  padding-right: 70px;
+  padding-left: 43px;
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+/* Style form elements */
+.form-group {
+  margin: 20px 0;
+  position: relative;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-bottom: 1px solid #ccc;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+textarea {
+  resize: none;
+}
+
+/* Style form labels */
+label {
+  position: absolute;
+  top: 10px;
+  left: 0;
+  transition: all 0.2s;
+  color: #777;
+}
+
+/* Label animation on focus */
+input:focus + label,
+textarea:focus + label {
+  top: -15px;
+  left: 0;
+  font-size: 14px;
+  color: #007bff;
+}
+
+/* Style the submit button */
+.submit-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #234E70;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  margin-left: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.submit-button:hover {
+  background-color: #E8BA40;
+}
+
+.ser_link{
+  color: #234E70;
+  text-decoration: underline;
+    text-decoration-color: #E8BA40;
+    text-decoration-thickness: 3px;
+}
+.ser_link p{
+  font-size: xx-large;
+}
+.ser_link a{
+  text-align: center;
+  text-decoration: none;
+  background-color: #E8BA40;
+  border-radius: 20%;
+  padding: 4% 2%;
+  width:150px;
+  margin-left: 15%;
+  font-weight: bold;
+  color: black;
+  
+}
+.ser_link a:active{
+  color: #E8BA40;
+}
+
+
+@media (max-width: 1024px) {
+  .yellow-blob {
+    width: 101%;
+    height: 330px;
+    margin-right: 20px;
+  }
+  .image-overlay {
+    width: 72%;
+    height: 65%;
+  }
+}
+@media (max-width: 768px) {
+  .yellow-blob {
+    width: 101%;
+    height: 330px;
+    margin-right: 20px;
+    margin-bottom: 200px;
+  }
+  .image-overlay {
+    width: 125%;
+    height: 55%;
+    top: 350px;
+    left: 25px;
+  }
+  .content-text {
+    padding-left: 100px;
+  }
+  .top-image {
+    top: 20px;
+    left: 50px;
+    width: 100%;
+  }
+  .bghead {
+    height: 500px;
+  }
+  .bgheadp{
+    padding: 30px;
+  }
+  .points {
+    flex-wrap: wrap;
+  }
+  .point span{
+    width: 45px;
+    height: 45px;
+    line-height: 40px;
+  }
+}
+@media (max-width: 768px) {
+  .yellow-blob {
+    display: none;
+  }
+  .content-text {
+    padding-left: 0px;
+  }
+  .bghead h1 {
+    font-size: 40px;
+  }
+  .bgheadp {
+    padding: 20px;
+}
+.bghead p {
+    font-size: 20px;
+    display: initial;
+}
+.hamburger {
+  position: fixed;
+  z-index: 100;
+  top: 1rem;
+  right: 1rem;
+  padding: 4px;
+  border: transparent solid 1px;
+  background: transparent;
+  cursor: pointer;
+  
+}
+.closeIcon {
+  display: none;
+}
+.menu {
+  position: fixed;
+  transform: translateY(-100%);
+  transition: transform 0.2s;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 99;
+  background: transparent;
+  color: #234E70;
+  list-style: none;
+  padding-top: 4rem;
+}
+.colorWhite{
+  background-color: #ffffff;
+}
+.showMenu {
+  transform: translateY(0);
+}
+nav{
+  display: none;
+}
+nav a{
+  display:none;
+}
+}
+
+@media (max-width: 400px){
+  .hamburger {
+    position: fixed;
+    z-index: 100;
+    top: 1rem;
+    right: 1rem;
+    padding: 4px;
+    border: transparent solid 1px;
+    background: transparent;
+    cursor: pointer;
+    
+  }
+  .closeIcon {
+    display: none;
+  }
+  .menu {
+    position: fixed;
+    transform: translateY(-100%);
+    transition: transform 0.2s;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 99;
+    background: transparent;
+    color: #234E70;
+    list-style: none;
+    padding-top: 4rem;
+  }
+  .colorWhite{
+    background-color: #ffffff;
+  }
+  .showMenu {
+    transform: translateY(0);
+  }
+  nav{
+    display: none;
+  }
+  nav a{
+    display:none;
+  }
+}  
+
+
+
+#myBtn {
+    position: fixed;
+    bottom: 15px;
+    right: 40px;
+    z-index: 99;
+    border: none;
+    outline: none;
+    background-color: #e8ba40c9;
+    color: white;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+#myBtn:hover {
+  background-color: #777; /* Add a darker background on hover */
+}
+html {
+  scroll-behavior: smooth;
+}
+
+/* ... Your existing styles ... */
+
+/* Contact Form Styles */
+.contact-form-container {
+  background: rgba(255, 255, 255, 0.9); /* Semi-transparent white */
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 2rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form-container h3,
+.contact-form-container p {
+  text-align: center;
+  color: #333;
+}
+
+.contact-form-container form {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-form-container label {
+  margin-top: 1rem;
+}
+
+.contact-form-container input,
+.contact-form-container textarea {
+  padding: 0.5rem;
+  margin-top: 0.5rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.submit-btn {
+  background-color: #E8BA40;
+  color: white;
+  border: none;
+  padding: 1rem;
+  margin-top: 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+  background-color: #e8ba40c9;
+}
+
+/* ... Rest of your styles ... */
+.reveal{
+  position: relative;
+  transform: translateY(150px);
+  opacity: 0;
+  transition: all 2s ease;
+}
+
+.reveal.revealactive{
+  transform: translateY(0px);
+  opacity:1;}

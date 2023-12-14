@@ -1,0 +1,413 @@
+body{
+    padding: 0;
+    margin: 0;
+}
+.dflex{
+    display: flex;
+}
+.container{
+    margin: 20px;
+    display: block;
+}
+.container h1{
+    text-align: center;
+    font-family: 'Cormorant Garamond', serif;
+}
+header{
+    width: 100%;
+}
+main{
+    width: 100%;
+    background-color: white;
+    flex-direction: column;
+}
+.bghead{
+  background-image:linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.8)) ,url("../images/handyman_service.png"); 
+    background-size: cover;
+    background-position: 15%;
+    height: 600px;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center
+}
+.darken-bg::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.bghead h1{
+    color: white;
+    font-size:60px; 
+    font-family: 'Cormorant Garamond', serif;
+    /* font-family: 'Exo 2', sans-serif; */
+    
+}
+.bghead p{
+    color:white;
+    font-size:25px;
+    font-weight: lighter;
+    padding: 0;
+    margin: 0;
+    font-family: 'Cormorant Garamond', serif;
+} 
+/* Style for the services section */
+
+.container {
+  display: flex;
+  background-color: #ffd700;
+  padding: 50px;
+  justify-content: space-between;
+}
+
+.info {
+  width: 50%;
+  color: #552b66;
+}
+
+.form-container {
+  background-color: #004B87;
+  width: 40%;
+  padding: 60px;
+}
+
+.form-input {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: none;
+  border-radius: 5px;
+}
+
+.submit-btn {
+  background-color: #ffd700;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.submit-btn:hover {
+  background-color:  grey;
+}
+.service-button {
+  background-color: #ffd700;
+  border-radius: 5px;
+  height: 30px;
+  width: 30%;
+}
+.Service_name{
+  text-align: center;
+  padding: 0px 65px;
+}
+.Service_name h1{
+  margin: 50px 0px;
+}
+.assembly-services {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 20px;
+}
+
+.assembly-service-box {
+  border: 1px solid #004B87;
+  flex-basis: calc(20% - 20px); /* 4 boxes per row with margins */
+  margin: 10px;
+  padding: 20px;
+  border-radius: 20px;
+  text-align: center;
+  background-color: #ffffff;
+}
+
+.assembly-service-box img {
+  width: 275px;
+  height: 320px;
+}
+
+.book-button {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.stars {
+  font-size: 24px;
+  color: #FFD700; /* Gold color for stars */
+}
+.testimonials{
+              /* display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            padding: 50px; */
+            margin: 50px;
+            overflow: hidden;
+            display: flex;
+            overflow: hidden;
+            position: relative;
+}
+.card {
+  min-width: 300px;
+    margin: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    border-radius: 5px;
+  /* background-color: #004B87;
+  width: 200px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px; */
+  /* display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px; */
+  /* float: left; 
+    display: none;  */
+}
+
+.card img {
+  width: 100px;
+  height: 100px;
+  padding: 20px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.card-title {
+  padding: 50px 25px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #004B87;
+}
+.cardflex{
+  display: flex;
+}
+.card-text {
+  font-size: 12px;
+  padding: 0px 25px;
+  padding-bottom: 20px;
+  text-align: center;
+  color: #004B87;
+}
+.carousel-button {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #004B87;
+  border: none;
+  padding: 10px;
+}
+
+.carousel-button.prev {
+  left: 10px;
+}
+
+.carousel-button.next {
+  right: 10px;
+  z-index: 2;
+}
+
+.testimonial-form-container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+#testimonialForm input,
+#testimonialForm textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+#testimonialForm button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#testimonialForm button:hover {
+  background-color: #0056b3;
+}
+#testimonialForm input[type="file"] {
+  border: 1px solid #ccc;
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+
+@media screen and (max-width: 1024px) {
+  .assembly-services {
+    justify-content: center;
+    margin: 0px;
+  }
+  .assembly-service-box img {
+    width: 235px;
+    height: 300px;
+  }
+  .card {
+    width: 180px;
+  }
+  .testimonials {
+    padding: 5px;
+    margin-top: 25px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+.assembly-service-box img {
+  width: 200px;
+  height: 245px;
+}
+.bgheadp{
+  margin: 75px;
+}
+.bghead h1 {
+  margin: 0px;
+}
+.service-button {
+  width: 45%;
+}
+.card {
+  width: 125px;
+}
+.bghead h1 {
+  font-size: 45px;
+}
+.bgheadp {
+  margin: 20px;
+}
+}
+@media screen and (max-width: 430px) {
+  .assembly-service-box img {
+    width: 140px;
+    height: 170px;
+}
+.stars {
+  font-size: 15px;
+}
+.service-button {
+  width: 51%;
+}
+.container{
+  padding: 10px;
+}
+.form-container{
+  padding: 25px;
+}
+.card img{
+  width: 80px;
+  height: 80px;
+}
+}
+@media screen and (max-width: 380px){
+.assembly-service-box img {
+    width: 100px;
+    height: 128px;
+}
+.service-button {
+  width: 57%;
+  font-size: x-small;
+}
+.stars {
+  font-size: 10px;
+}
+}
+@media screen and (max-width: 324px){
+.bghead h1 {
+    font-size: 34px;
+}
+.bghead p{
+  font-size: 20px;
+}
+.bghead {
+  height: 400px;
+}
+.assembly-service-box img {
+  width: 200px;
+  height: 222px;
+}
+.stars {
+  font-size: 20px;
+}
+.card {
+  width: 200px;
+}
+}
+
+@media (max-width: 400px){
+  .hamburger {
+    position: fixed;
+    z-index: 100;
+    top: 1rem;
+    right: 1rem;
+    padding: 4px;
+    border: transparent solid 1px;
+    background: transparent;
+    cursor: pointer;
+    
+  }
+  .closeIcon {
+    display: none;
+  }
+  .menu {
+    position: fixed;
+    transform: translateY(-100%);
+    transition: transform 0.2s;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 99;
+    background: transparent;
+    color: #234E70;
+    list-style: none;
+    padding-top: 4rem;
+  }
+  .colorWhite{
+    background-color: #ffffff;
+  }
+  .showMenu {
+    transform: translateY(0);
+  }
+  nav{
+    display: none;
+  }
+  nav a{
+    display:none;
+  }
+}  
+#myBtn {
+  position: fixed;
+  bottom: 15px;
+  right: 40px;
+  z-index: 99;
+  border: none;
+  outline: none;
+  background-color: #e8ba40c9;
+  color: white;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+#myBtn:hover {
+background-color: #777; /* Add a darker background on hover */
+}
+html {
+scroll-behavior: smooth;
+}

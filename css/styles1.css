@@ -1,0 +1,462 @@
+body{
+    padding: 0;
+    margin: 0;
+}
+.dflex{
+    display: flex;
+}
+.container{
+    margin: 20px;
+    display: block;
+}
+.container h1{
+    text-align: center;
+    font-family: 'Cormorant Garamond', serif;
+}
+header{
+    width: 100%;
+}
+main{
+    width: 100%;
+    background-color: white;
+    flex-direction: column;
+}
+.bghead{
+  background-image:linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.8)) ,url("../images/handyman_service.png"); 
+    background-size: cover;
+    height: 600px;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-position: 15%;
+}
+.darken-bg::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.bghead h1{
+    color: white;
+    font-size:60px; 
+    font-family: 'Cormorant Garamond', serif;
+    /* font-family: 'Exo 2', sans-serif; */
+    
+}
+.bghead p{
+    color:white;
+    font-size:25px;
+    font-weight: lighter;
+    padding: 0;
+    margin: 0;
+    font-family: 'Cormorant Garamond', serif;
+} 
+/* Style for the services section */
+.services-S h1{
+    text-align: center;
+    color:#234E70;
+}
+.services-section {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 30px 170px;
+  }
+  
+  /* Style for individual service links */
+  .service-link {
+    flex: auto;
+    text-decoration: none;
+    color: #333;
+  }
+  
+  /* Style for individual service items */
+  .service {
+    text-align: center;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    transition: transform 0.3s;
+    max-width: 300px;
+    font-family: 'Cormorant Garamond', serif;
+  }
+  
+  /* Style for service images */
+  .service img {
+    width: 100%;
+    max-height: 150px; /* Adjust the height as needed */
+    object-fit: cover;
+    border-radius: 5px 5px 0 0;
+  }
+  
+  /* Service item hover effect */
+  .service:hover {
+    transform: scale(1.05);
+    background-color: #f0f0f0;
+  }
+  
+  /* Additional styling for h2 and p tags inside service items */
+  .service h2 {
+    font-size: 20px;
+    margin: 10px 0;
+  }
+  
+  .service p {
+    font-size: 16px;
+    margin: 10px 0;
+    padding: 0 20px;
+    color: #666;
+  }
+  /* Style for service images */
+  .service img {
+    width: 100%;
+    max-height: 150px; /* Adjust the height as needed */
+    object-fit: cover;
+    border-radius: 5px 5px 0 0;
+  }
+  
+  /* Style for "Book Now" button */
+  .book-now-button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #E8BA40; /* Adjust the color as needed */
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .arrow {
+    font-size: 20px;
+    margin-left: 10px;
+  }
+  
+  /* Button hover effect */
+  .book-now-button:hover {
+    background-color: #234E70; /* Adjust the hover color as needed */
+  }
+  
+  /* Service item hover effect */
+  .service:hover {
+    transform: scale(1.05);
+    background-color: #f0f0f0;
+  }
+  
+  /* Additional styling for h2 and p tags inside service items */
+  .service h2 {
+    font-size: 20px;
+    margin: 10px 0;
+  }
+  
+  .service p {
+    font-size: 16px;
+    margin: 10px 0;
+    padding: 0 20px;
+    color: #666;
+  }
+  
+
+main h1{
+    align-self: center;
+    font-weight: 1000;
+    font-family: 'Cormorant Garamond', serif;
+}
+.container h1{
+    color: #234E70;
+}
+.testimonial img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+
+.testimonial h3 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #234E70;
+    margin-bottom: 10px;
+    font-family: 'Cormorant Garamond', serif;
+}
+
+.testimonial p {
+    font-size: 18px;
+    line-height: 1.5;
+    color: #666;
+    text-align: center;
+    margin-bottom: 20px;
+    font-family: 'Cormorant Garamond', serif;
+}
+
+.testimonial .stars {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.testimonial .stars span {
+    font-size: 24px;
+    color: #ffd700;
+    margin-right: 5px;
+}
+
+.testimonial-container {
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+    flex-wrap: wrap;
+}
+
+/* Style for individual testimonial items */
+
+
+.testimonial {
+    width: 25%; /* 3 columns with some spacing */
+    margin: 10px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    text-align: center;
+    background: #f9f9f9;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+
+
+.contact{
+  margin: 0;
+            padding: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+}
+.containers {
+  position: relative;
+  width: 700px;
+  height: 400px;
+  background-color: #ffffff;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+.orange-circle {
+  position: absolute;
+  top: -40px;
+  right: -40px;
+  width: 300px;
+  height: 300px;
+  background-color:  #ffd700;
+  border-radius: 50%;
+}
+
+.city-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 60%;
+  background: url("../images/portrait-smiling-woman-outdoors_23-2147907068.jpg"); 
+  background-size: cover;
+  border-top-left-radius: 10px;
+}
+
+.portrait-image {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 35%;
+  height: 40%;
+  background: url("../images/snapshot-curly-blond-girl-with-slight-smile-looking-camera-street_197531-26018.jpg");
+  background-size: cover;
+  border-bottom-left-radius: 10px;
+}
+
+.form-section {
+  padding-left: 55%;
+  z-index: 1;
+  position: relative;}
+
+h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.input-field, button {
+  width: 90%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.submit1 {
+  background-color: #0056b3;
+  color: #fff;
+  cursor: pointer;
+  border: none;
+  font-weight: bold;
+}
+
+.testimonial {
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+.fade-in {
+  opacity: 1;
+}
+
+.hidden {
+  display: none;
+}
+
+
+
+@media (max-width: 950px) {
+  .bghead h1 {
+    font-size: 50px;
+  }
+  .bgheadp{
+    padding: 20px;
+  }
+  .bghead p{
+    font-size: 20px;
+  }
+  .services-section{
+    margin: 20px 110px;
+  }
+  .testimonial{
+    width: 40%;
+  }
+  h1{
+    font-size: 35px;
+    margin-top: 30px;
+  }
+}
+
+@media (max-width: 450px) {
+  .services-section{
+    margin: 20px 73px;
+    display:block;
+  }
+  .service{
+    width: 260px;
+    margin-bottom: 30px;
+  }
+  .testimonial{
+    width: 50%;
+    margin-bottom:10px;
+    padding: 10px;
+  }
+  .testimonial p {
+    font-size: 10px;
+  }
+  .testimonial h3 {
+    font-size: 15px;
+  }
+  .testimonial img {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 0px;
+  }
+  .testimonial .stars {
+    margin-bottom: 0px;
+  }
+  h1{
+    font-size: 35px;
+    margin-top: 30px;
+  }
+
+}
+@media (max-width: 400px){
+.services-section {
+    margin: 20px 38px;
+  }
+  .portrait-image {
+    width: 58%;
+    height: 29%;
+  }
+  .city-image {
+    width: 45%;
+    height: 30%;
+  }
+  .bghead h1 {
+    font-size: 40px;
+}
+.bgheadp {
+  padding: 32px;
+}
+.testimonial{
+  width: 100%;
+}
+.form-section {
+  padding-left: 40%;
+}
+
+
+}
+
+
+
+.reveal{
+  position: relative;
+  transform: translateY(150px);
+  opacity: 0;
+  transition: all 2s ease;
+}
+
+.reveal.revealactive{
+  transform: translateY(0px);
+  opacity:1;}
+
+  
+
+  #myBtn1 {
+    position: fixed;
+    bottom: 15px;
+    right: 40px;
+    z-index: 99;
+    border: none;
+    outline: none;
+    background-color: #e8ba40c9;
+    color: white;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 5px;
+    width: 35px;
+}
+  
+
+
+  #myBtn {
+    position: fixed;
+    bottom: 15px;
+    right: 40px;
+    z-index: 99;
+    border: none;
+    outline: none;
+    background-color: #e8ba40c9;
+    color: white;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+#myBtn:hover {
+  background-color: #777; /* Add a darker background on hover */
+}
+html {
+  scroll-behavior: smooth;
+}

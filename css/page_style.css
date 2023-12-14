@@ -1,0 +1,258 @@
+html *{
+  font-family: 'Cormorant Garamond', serif;
+}
+.dflex{
+  display: flex;
+}
+/* Initial styling of the header */
+.fixed-header {
+  background-color: transparent;
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  left: 0;
+  width: 100%;
+  transition: background-color 0.3s;
+}
+
+/* Change the background to white when scrolling */
+.fixed-header.scrolled {
+  background-color: #ffffff;
+}
+
+.page_head{
+  flex-direction: row;
+  background-color: #ffffff;
+  width: 100%;
+}
+header{
+  flex-direction: row;
+  width: 40%;
+}
+.page_title{
+  display: flex;
+  background-color: #000000;
+  color: #ffffff;
+  padding: 1%;  
+  align-items: flex-start;
+}
+
+header img{
+  height: 8%;
+  width: 8%;
+}
+
+header p{
+  margin: 0px;
+  font-size: 32px;
+  padding-top: 15px;
+  padding-left: 30px;
+  font-weight: bolder;
+  color: #234E70;
+  font-family: 'Cormorant Garamond', serif;
+}
+
+nav a{
+  padding: 2%;
+  font-family: 'Cormorant Garamond', serif;
+  font-size: larger;
+  text-decoration: none;
+  font-weight: bold;
+   
+  color:#ffffff;}
+
+nav {
+  flex-direction: row;
+  justify-content: flex-end;
+  width: 80%;
+  align-items: flex-end;
+  
+}
+
+
+
+
+nav a:hover{
+  text-decoration: underline;
+  text-underline-offset: 8px;
+  text-decoration-color: #E8BA40;
+  text-decoration-thickness:3px;
+}
+.colorchange{
+  color: #ffffff;
+}
+.colorblue{
+  color:#234E70;
+}
+
+/* Footer CSS */
+/* .footer {
+  width: 100%;
+  color: white;
+  text-align: center;
+  padding: 1% 0% 1% 0%;
+} */
+
+/* To add the margin to the quote */
+.quote{
+  text-align: left;
+  margin-left: 10%;
+}
+
+/* @media (max-width: 768px) {
+  .dflex {
+      flex-direction: column;
+  }
+  header {
+      width: 100%;
+  }
+  nav {
+      width: 100%;
+      justify-content: center;
+  }
+}*/
+
+
+.reveal{
+  position: relative;
+  transform: translateY(150px);
+  opacity: 0;
+  transition: all 1s ease;
+}
+
+.reveal.revealactive{
+  transform: translateY(0px);
+  opacity:1;
+}
+
+.footer {
+  position: relative;
+  /* Creating a slanted linear gradient background from top left (yellow) to bottom right (dark blue) */
+  background: linear-gradient(135deg, #FFD700 53%, #234E70 50%);
+  padding: 50px 0px 40px; /* Adjust padding as needed */
+  color: white;
+  text-align: center;
+}
+.footer svg.blob {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto; /* Adjust height automatically based on SVG */
+  z-index: 0;
+}
+.footer-content {
+  position: relative;
+  z-index: 1;
+}
+.footer-menu {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  gap: 20px; /* Adjust as needed */
+}
+.footer-menu a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+.footer-social-icons {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 20px; /* Adjust as needed */
+  margin-top: 20px; /* Adjust as needed */
+}
+.footer-social-icons li a {
+  color: white;
+  font-size: 24px;
+}
+.contact-button {
+  background-color: transparent;
+  border: 2px solid white;
+  color: #234E70;
+  padding: 10px 30px;
+  font-weight: bold;
+  margin-top: 20px;
+  cursor: pointer;
+}
+.contact-button1 {
+  background-color: transparent;
+  border: 2px solid white;
+  color: #234E70;
+  padding: 10px 30px;
+  font-weight: bold;
+  margin-top: 20px;
+  cursor: pointer;
+  width: 13%;
+}
+
+/* ... Existing CSS ... */
+
+/* Newsletter Signup Form Styles */
+.newsletter-signup p {
+  margin: 20px 0 10px;
+}
+
+.newsletter-signup form {
+  display: flex;
+  width: 25%;
+  margin-left: 40%;
+  justify-content: center;
+}
+
+.newsletter-signup input[type="email"] {
+  padding: 10px;
+  border: none;
+  margin-right: 10px;
+}
+.newsletter-signup input[type="email"] {
+  padding: 10px;
+  height: 15px;
+  border: none;
+  margin-right: 10px;
+}
+
+.newsletter-signup button {
+  padding: 10px 20px;
+  background-color: #E8BA40;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+/* About Section Styles */
+.footer-about {
+  margin-top: 40px;
+}
+
+/* Contact Information Styles */
+.footer-contact-info {
+  margin-top: 40px;
+}
+
+.footer-contact-info p {
+  margin: 5px 0;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .footer-content {
+    flex-direction: column;
+  }
+
+  .newsletter-signup form {
+    flex-direction: column;
+  }
+
+  .newsletter-signup input[type="email"] {
+    margin-bottom: 10px;
+  }
+}
+.para{
+  width: 55%;
+    margin-left: 25%;
+}

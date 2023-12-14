@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../images/landscape_icon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600&family=Exo+2:wght@500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/page_style_sourav.css">
+    <title>Landscape Deisgn</title>
+</head>
+
+<body>
+    <!-- <header class="dflex">header</header> -->
+
+    <div class="page_head dflex fixed-header">
+        <header class="dflex">
+            <img src="../images/logo.png" alt="">
+            <p id="title1">Handyman</p>
+        </header>
+        <nav class="dflex">
+            <a class="navlink" href="home.html">Home</a>
+            <a class="navlink" href="login.html">Login/Sign Up</a>
+            <a class="navlink" href="booking.html">Booking</a>
+        </nav>
+            
+    </div>
+    <div class="bghead_home dflex">
+        <h1>Discover Our Services</h1>
+        <p>We provide a wide range of services that you need for your everyday household needs.</p>
+        <p>So if it is your dripping tap or faulty circuit, We got you covered!</p>
+    </div>
+    <div class="container dflex">
+        <main class="dflex">
+            <h1>Our Services</h1>
+            <div class="projects dflex">
+                <div class="proj_side dflex">
+                    <div class="projld dflex display_rowre">
+                        <a href="handyman.html"></a>
+                        <p>Handyman</p>
+                    </div>
+                    <div class="projld dflex display_row">
+                        <a href="handyman.html"></a>
+                        <p>Landscape Home</p>
+                    </div>
+                </div>
+                <div class="proj_side_home dflex">
+                    <div class="projld dflex display_rowre">
+                        <a href="cleaning.html"></a>
+                        <p>Cleaning</p>
+                    </div>
+                    <div class="projld dflex display_row">
+                        <a href="handyman.html"></a>
+                        <p>And many more...</p>
+                    </div>
+                </div>
+
+            </div>
+        </main>
+    </div>
+    <footer class="footer">
+        <div class="footer-content">
+          <!-- Footer Menu -->
+          <ul class="footer-menu">
+            <li><a class="navlink" href="../Html/home.html">Home</a></li>
+            <li><a class="navlink" href="../Html/handyman_home.html">Handyman</a></li>
+            <li><a class="navlink" href="../Html/landscape_main.html">Landscape</a></li>
+            <li><a class="navlink" href="">Cleaning</a></li>
+            <li><a class="navlink" href="../Html/booking.html">Booking</a></li>
+          </ul>
+      
+          <!-- Contact Button -->
+          <button class="contact-button">Contact Us</button>
+      
+          <!-- Social Icons -->
+          <ul class="footer-social-icons">
+            <li><a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a></li>
+            <li><a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a></li>
+          </ul>
+          
+          <!-- Newsletter Signup Form -->
+          <div class="newsletter-signup">
+            <p>Subscribe to our newsletter</p>
+            <form>
+              <input type="email" placeholder="Enter your email" required>
+              <button type="submit">Subscribe</button>
+            </form>
+          </div>
+      
+          <!-- About Section -->
+          <div class="footer-about">
+            <p>About Us</p>
+            <p class="para">At Handyman, we are committed to providing top-notch home maintenance solutions to our community. Our skilled team brings years of experience in cleaning, landscaping, and a wide array of handyman services. We believe in delivering quality, efficiency, and reliability to every job, ensuring that your home or business is in the best hands.</p>
+          </div>
+      
+          <!-- Contact Information -->
+          <div class="footer-contact-info">
+            <p>Contact Information</p>
+            <p><i class="fas fa-envelope"></i> email@example.com</p>
+            <p><i class="fas fa-phone"></i> +1234567890</p>
+          </div>
+        </div>
+      </footer>
+    <script src="../js/sourav-js.js"></script>
+    <script>
+
+
+        window.addEventListener('scroll', function () {
+            let header = document.querySelector('.fixed-header');
+            let nava = document.querySelectorAll('.navlink');
+            let title = document.querySelector('#title1');
+
+            if (window.scrollY > 0) {
+                header.classList.add('scrolled');
+
+
+                title.classList.remove('colorchange');
+                title.classList.add('colorblue');
+                for (i = 0; i < nava.length; i++) {
+                    nava[i].classList.remove('colorchange');
+                    nava[i].classList.add('colorblue');
+                }
+
+            } else {
+                header.classList.remove('scrolled');
+
+                title.classList.add('colorchange');
+                title.classList.remove('colorblue');
+                for (i = 0; i < nava.length; i++) {
+                    nava[i].classList.add('colorchange');
+                    nava[i].classList.remove('colorblue');
+                }
+            }
+        });
+
+
+    </script>
+
+</body>
+
+</html>
